@@ -6,7 +6,6 @@ Contains all relevant Arduino source code/files
 
 ## Relay
 > - ⚡ Source Code to interface the Arduino and a Relay Module
-
 > - ✔ Check full project here https://www.hackster.io/peterclement/working-with-relay-with-arduino-b777e6
 ![relay_img](https://user-images.githubusercontent.com/61213263/132133909-0fd54c8a-5681-4506-91a5-d295993e28b7.jpg)
 
