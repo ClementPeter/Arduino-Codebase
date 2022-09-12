@@ -6,8 +6,6 @@ int pot4 = A3;
 int pot5 = A6;
 int pot6 = A7;
 
-int wait = 1000;
-
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
