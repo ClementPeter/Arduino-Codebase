@@ -1,0 +1,53 @@
+//6 Channel PWM READER to read anlog values off respective potentiometers
+int pot1 = A0;
+int pot2 = A1;
+int pot3 = A2;
+int pot4 = A3;
+int pot5 = A6;
+int pot6 = A7;
+
+int wait = 1000;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+  pinMode(pot1, INPUT);
+  pinMode(pot2, INPUT);
+  pinMode(pot3, INPUT);
+  pinMode(pot4, INPUT);
+  pinMode(pot5, INPUT);
+  pinMode(pot6, INPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  
+  analogRead(pot1);
+  analogRead(pot2);
+  analogRead(pot3);
+  analogRead(pot4);
+  analogRead(pot5);
+  analogRead(pot6);
+
+
+  Serial.print("         pot1 :  ");
+  Serial.print( analogRead(pot1));
+
+  Serial.print("         pot2 :  ");
+  Serial.print( analogRead(pot2));
+
+  Serial.print("          pot3 :  ");
+  Serial.print( analogRead(pot3));
+
+  Serial.print("          pot4 :  ");
+  Serial.print( analogRead(pot4));
+
+  Serial.print("          pot5 :  ");
+  Serial.print( analogRead(pot5));
+
+  Serial.print("          pot6 :  ");
+  Serial.println( analogRead(pot6));
+
+}
